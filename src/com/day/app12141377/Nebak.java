@@ -11,3 +11,9 @@ public class Nebak {
         Random angkaRandom=new Random(); // Mengacak angka
         String cariY; // Untuk mencari nilai Y, jika input y, maka otomatis akan keluar
         do{
+            System.out.println("Masukkan 'Nama' anda atau tekan 'y' untuk keluar, kemudian tekan enter = ");
+            cariY=input.nextLine();
+            namaPlayer.add(cariY);
+            int NilaiJalan = 0; // Variabel nilai 
+            int CekGameOver=0; // Cek Game over. bernilai 1 jika GameOver
+        }
