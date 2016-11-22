@@ -34,3 +34,8 @@ public class Nebak {
                     System.out.println("Anda mempunyai kesempatan menebak 5 kali.");
                     int AngKaAcak=angkaRandom.nextInt(Pang); // Mulai mengacak Nomor
                     // Mulai Looping 5 kali kesempatan. disni malah 6 kali, karena yg ke 6 untuk memberikan variabel GameOver
+                    for(Kout=0;Kout<=5;Kout++){
+                        if(Kout==5){ // Jika Loop ke 6, maka dipastikan GameOver
+                            System.out.println("GAMEOVER! Anda Gagal");
+                            CekGameOver++; // Memberikan nilai ++ (1), untuk memunculkan game Over
+                        }
