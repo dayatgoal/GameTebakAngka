@@ -87,3 +87,23 @@ public class Nebak {
                     if(PiLevel==5){ // Jika sudah Mencapai Level 5, langsung di break/otomatis Exit
                         break;
                     }
+                    else{
+                    aKumulasi[StarNilaiO]=NilaiPasJalan; // Membuat Array Nilai   
+                    System.out.println("Ketik 'next' dan tekan enter untuk lanjut ke Level berikutnya atau ketik 'exit' untuk keluar : ");
+                    nextLevel=input.nextLine(); // inputan next level atau exit
+                    PiLevel++; // Level bertambah setelah input Next Level
+                    
+                    }
+                   
+                }
+                while(!"exit".equals(nextLevel));
+              
+              // ------------------- END OF SCRIPT GAME TEBAK
+            } // Stop Looping Nama Pemain
+            // Ngolah Nilai
+            for(int rO=0; rO<5; rO++){ // membuat array nilai pada tiap level, untuk kemudian dijumlahkan
+                NilaiJalan=NilaiJalan+aKumulasi[rO];  
+            }
+            nilaiPermainan.add(NilaiJalan); // Menambahkan Nilai Akhir pada masing masing peserta
+            // SCORE SEMENTARA
+            if(!"y".equals(cariY)){ // Skore akan ditampilkan sementara, tetaapi jika y diinputkan, akan dilewati
